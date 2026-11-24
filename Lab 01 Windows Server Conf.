@@ -39,10 +39,12 @@ Verified that the change was properly implemented
 DC01-Desktop shutdown to move onto the next step of network configuration 
 
 Configure Virtualbox Networking:
-Set IPv4 address to 192.168.56.1/24
+Set IPv4 address of Virtualbox Network adapter to 192.168.56.1/24
 Configured DHCP to be disabled to prevent automatic IP addressing 
 Set DC01-Desktop VM to be attached to the VirtualBox Host-Only Ethernet Adapter 
-Initialized DC01-Server to configure network settings within Windows Server
+Initialized DC01-Desktop to configure network settings within Windows Server
+Assigned DC01-Desktop the IPv4 address of 192.168.56.10 at 10:53PM 11/23/2026
+Confirmed IPv4 address assignment by running the command "ipconfig /all" 
 
 
 
