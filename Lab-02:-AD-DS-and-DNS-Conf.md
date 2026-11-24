@@ -1,8 +1,8 @@
-Lab 02: Active Directory and DNS 
+# Lab 02: Active Directory and DNS 
 Date: 11/24/2026
 Status: In Progress 
 
-Objectives: 
+## Objectives: 
 Install AD DS
 Promote server to domain controller
 Configure DNS
@@ -12,7 +12,7 @@ Environment:
 Hypervisor: Oracle VirtualBox
 Hostname: DC01
 
-Objective 1 Install AD DS:
+### Objective 1 Install AD DS:
 Snapshot created titled "DC01-Baseline" to rollback to if need be 
 Ran through pre-implementation checks consisting of verifying Windows Server version, hostname, static IPv4 config, confirmed connectivity to 192.168.56.1, confirmed configuration of DNS server address
 
@@ -26,7 +26,7 @@ Selected Active Directory Domain Services (AD DS) through the "Add Roles and Fea
 
 Active Directory Domain Services (AD DS) successfully installed onto DC01, now moving onto the next objective of promoting the server to domain controller 
 
-Objective 2 Promote Server to Domain Controller:
+### Objective 2 Promote Server to Domain Controller:
 
 Selected the "Add a new forest" deployment option because the lab environment contains no exiting Active Directory domains or forests. DC01 will server as the initial domain controller and DNS server for the newly established forest.
 
