@@ -52,7 +52,7 @@ An automatic reboot is expected following successful promotion.
 
 Retained the automatically generated NetBIOS domain name for compatibility with Windows authentication and legacy domain naming conventions.
 
-Challenges and Troubleshooting 
+Challenges and Troubleshooting  
 --------------------------------------------------------------------------------------------------
 
 Observation 1: DNS Delegation Warning 
