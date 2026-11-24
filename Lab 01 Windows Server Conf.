@@ -8,14 +8,53 @@ Windows Server 2025 with 4-6GB of RAM
 Environment:
 Host OS: Windows 11 Home
 Hypervisor: Oracle VirtualBox
-Guest OS: Windows Server 2025 Evaluation
+Guest OS: Windows Server 2022 Evaluation
 VM Name: DC01
 RAM: 4-6GB (Planned)
 Storage: 60GB (Planned)
 Network: Isolated virtual network
 
-Implementation:
+Initial Implementation:
 Successfully installed and configured VMWare Workstation
 Windows Server user credentials set prior to install as "Admin"
-VM name set as DC02 
+VM name set as DC01
 RAM set to 4GB, storage to 60GB, may adjust in the future
+Successful boot and selection of disk for install of 
+Windows Server 2025 after slight troubleshooting (see section labeled "Issue 1" within "Challenges and Troubleshooting" for details)
+
+First Boot-up:
+Windows Server successfully initialized after install 
+Although I made the mistake of installing the "Core" version
+I will shutdown this version and create a new VM titled as DC01-Desktop 
+
+Second Implementation: 
+VM name set as DC01-Desktop 
+Set the desired operating system for install to be the desktop version of Windows Server 2022
+Admin credentials set, login successful 
+
+DC01-Desktop Configuration: 
+Renamed the Computer name to DC01-Desktop within the properties section 
+Restarted with the reasoning of "Other:Planned" at 8:32PM 11/23/2026
+Verified that the change was properly implemented 
+DC01-Desktop shutdown to move onto the next step of network configuration 
+
+Configure Virtualbox Networking:
+Set IPv4 address to 192.168.56.1/24
+Configured DHCP to be disabled to prevent automatic IP addressing 
+Set DC01-Desktop VM to be attached to the VirtualBox Host-Only Ethernet Adapter 
+Initialized DC01-Server to configure network settings within Windows Server
+
+
+
+Challenges and Troubleshooting:
+
+Issue 1
+-------------------------------------------------------------------------------
+Initial selection of disk for install had a slight hiccup,
+upon selection, the primary 60GB disk was already in use. 
+Simply clearing the disk space allowed me to select the disk for installation
+-------------------------------------------------------------------------------
+
+
+
+
