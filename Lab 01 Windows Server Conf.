@@ -1,0 +1,21 @@
+Lab 01: Windows Server Configuration/Implementation 
+Date: 11/23/2026
+Time: 7:48PM CST
+
+Objectives: Successfully setup and configure a virtual machine running
+Windows Server 2025 with 4-6GB of RAM 
+
+Environment:
+Host OS: Windows 11 Home
+Hypervisor: Oracle VirtualBox
+Guest OS: Windows Server 2025 Evaluation
+VM Name: DC01
+RAM: 4-6GB (Planned)
+Storage: 60GB (Planned)
+Network: Isolated virtual network
+
+Implementation:
+Successfully installed and configured VMWare Workstation
+Windows Server user credentials set prior to install as "Admin"
+VM name set as DC02 
+RAM set to 4GB, storage to 60GB, may adjust in the future
